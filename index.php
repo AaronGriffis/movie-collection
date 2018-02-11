@@ -243,6 +243,13 @@
                </tbody>
             </table>
          </div>
+
+         <div id="progress-bar" class="panel-body">
+            <h3>Fetching movies from database</h3>
+            <div class="progress">
+               <div class="progress-bar progress-bar-striped active" role="progressbar" style="width: 100%"></div>
+            </div>
+         </div>
       </div>
    </div>
 

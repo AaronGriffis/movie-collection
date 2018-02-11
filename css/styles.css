@@ -45,6 +45,7 @@ body>.container>.panel {
    -webkit-overflow-scrolling: touch;
    overflow-y: auto;
    max-height: calc(100vh - 66px);
+   display: none;
 }
 
 .summary-row {

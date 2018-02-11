@@ -6,7 +6,6 @@ if (location.hostname === "localhost" || location.hostname === "127.0.0.1") {
 $(document).ready(loaded);
 
 function loaded() {
-   login();
    $.ajax(url + "crud.php", {
       type: "GET",
       data: { table: "movies" },
@@ -105,6 +104,10 @@ function loadMovies(data) {
       buildRows(item);
    });
    $("#movie-table>thead th:nth-of-type(2)").trigger('click');
+   $("#progress-bar").remove();
+   $(".table-responsive").show();
+   
+   login();
 }
 
 function buildRows(item) {
