@@ -1,0 +1,249 @@
+html, body {
+   height: 100%;
+   width: 100%;
+   overflow: hidden;
+}
+
+body {
+   text-align: center;
+}
+
+body>.container {
+   padding: 0;
+}
+
+/*
+* Table
+*/
+body>.container>.panel {
+   display: inline-block;
+   max-width: 100%;
+   margin-bottom: 0;
+}
+
+.panel>.panel-heading>.container-fluid {
+   padding: 0;
+}
+
+.table-toolbar>div {
+   margin-bottom: 0;
+}
+
+#table-search {
+   width: 150px;
+   padding-right: 4.5rem;
+}
+
+#clear-table-search {
+   cursor: pointer;
+   pointer-events: auto;
+   color: #ccc;
+   display: none;
+}
+
+.table-responsive {
+   -webkit-overflow-scrolling: touch;
+   overflow-y: auto;
+   max-height: calc(100vh - 66px);
+}
+
+.summary-row {
+   cursor: pointer;
+}
+
+#movie-table .summary-row>td:nth-of-type(2) {
+   min-width: 10rem;
+   max-width: 20rem;
+   white-space: normal;
+}
+
+#movie-table td {
+   vertical-align: middle;
+}
+
+#movie-table .btn-group {
+   display: flex;
+}
+
+th {
+   text-align: center;
+}
+
+#movie-table>thead th:not(:last-child) {
+   cursor: pointer;
+}
+
+#movie-table>thead .glyphicon-triangle-top, #movie-table>thead .glyphicon-triangle-bottom {
+   color: #666;
+   margin-left: 5px;
+   font-size: 1.5rem;
+}
+
+.star-rating {
+   white-space: nowrap;
+   color: rgb(218, 165, 32);
+}
+
+.star-rating .glyphicon-star-empty {
+   color: rgba(218, 165, 32, 0.25);
+}
+
+.fg-stars>span, .bg-stars>span {
+   margin-right: -0.25rem;
+}
+
+.fg-stars>span:last-child, .bg-stars>span:last-child {
+   margin-right: 0;
+}
+
+.star-rating>div {
+   position: relative;
+}
+
+.fg-stars {
+   overflow: hidden;
+   position: absolute;
+}
+
+#movie-table .detail-row>td {
+   padding: 0;
+   border-top: 0;
+}
+
+#movie-table .detail-row table {
+   margin-bottom: 0;
+}
+
+#movie-table .detail-row table tr {
+   text-align: left;
+}
+
+#movie-table .detail-row table th {
+   width: 1%;
+   text-align: right;
+}
+
+#movie-table .detail-row table td {
+   width: 1px;
+}
+
+#movie-table .table>tbody>tr>td {
+   white-space: normal;
+}
+
+/*
+ * Modal
+ */
+.modal {
+   text-align: left;
+}
+
+a.list-group-item:hover, a.list-group-item:focus {
+   background-color: #464545;
+}
+
+#overview-modal .row>div:first-of-type {
+   text-align: center;
+}
+
+#overview-modal h4 {
+   margin: 10px;
+}
+
+@media (min-width: 768px) {
+   body {
+      margin-top: 20px;
+   }
+
+   body>.container {
+      padding: unset;
+   }
+
+   .table-responsive {
+      max-height: calc(100vh - 108px);
+   }
+   
+   #overview-modal h4 {
+      margin-top: 0;
+   }
+}
+
+#modal h1 {
+   position: absolute;
+   text-align: center;
+   width: 20rem;
+   top: 20rem;
+   right: 0;
+   left: 0;
+   margin: auto;
+   color: #464545;
+}
+
+#modal label {
+   padding-left: 0;
+   padding-right: 0;
+}
+
+@media (min-width: 992px) {
+   #modal .col-md-6:last-of-type {
+      border-left: 1px solid #464545;
+   }
+}
+
+#modal .panel {
+   margin-bottom: 0;
+}
+
+#runtime {
+   margin-bottom: 0;
+}
+
+#results {
+   max-height:558px;
+   overflow-y:auto;
+}
+
+[name=rating] + span {
+   color: rgb(218, 165, 32);
+}
+
+#mins {
+   border-top-right-radius: 4px;
+   border-bottom-right-radius: 4px;
+}
+
+#modal input[name=hours], #modal input[name=minutes] {
+   padding-left: 5px;
+   padding-right: 5px;
+}
+
+#checkbox-icon:before,
+#checkbox-icon:after{
+   font-family: 'Glyphicons Halflings';
+   font-size: 3.2rem;
+   cursor: pointer;
+}
+
+#checkbox-icon:before{
+   content: "\e106";
+}
+
+#checkbox-seen:checked + #checkbox-icon:before{
+   content: "\e105";
+}
+
+#checkbox-icon {
+   color: #666;
+}
+
+#checkbox-icon:focus, #checkbox-icon:hover {
+   color: #464545;
+}
+ 
+#checkbox-icon:active {
+   color: #1a1a1a;
+}
+
+#modal .col-md-6 .form-group:last-of-type {
+   margin-bottom: 0;
+}
